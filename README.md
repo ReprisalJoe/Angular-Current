@@ -3,6 +3,7 @@
 ## Visual Studio 2022 .Net Angular 5 project, with HTTPS configure option.
 ### Changes
 It has been upgraded to a clean **Angular 13.1.2.**
+
 With templating variables added you must use the release or download this and save it as a template.
 It will not work unless you export as a template.
 
