@@ -1,6 +1,6 @@
 # Project - Angular-Current
 
-## Visual Studio 2022 .Net Angular 5 project, with HTTPS configure option.
+## Visual Studio 2022 .Net Angular 5 project, with HTTPS configure option and Angular Material
 ### Changes
 It has been upgraded to a clean **Angular 13.2.0**
 As of Version 2.0 ng-connection-service has been removed until it can be fixed
@@ -8,8 +8,7 @@ As of Version 2.0 ng-connection-service has been removed until it can be fixed
 With templating variables added you must use the release or download this and save it as a template.
 It will not work unless you export as a template.
 
-~~It will compile and run cleanly on fork.~~
-It has been modified
+#Angular Material 13.2.0
 
 WeatherController removed
 ~~Controllers\WeatherForecastControll.cs
