@@ -8,7 +8,7 @@ As of Version 2.0 ng-connection-service has been removed until it can be fixed
 With templating variables added you must use the release or download this and save it as a template.
 It will not work unless you export as a template.
 
-#Angular Material 13.2.0
+## Angular Material 13.2.0
 
 WeatherController removed
 ~~Controllers\WeatherForecastControll.cs
