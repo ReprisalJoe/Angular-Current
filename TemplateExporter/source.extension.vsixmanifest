@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="f1b4ab70-0246-4ae3-b0ff-196bdc0635e2" Version="1.0" Language="en-US" Publisher="Joe Swindell" />
+        <DisplayName>.NET 5 with Angular 13.2</DisplayName>
+        <Description xml:space="preserve">A project template for creaeting a .NET 5 applications with Angular 13.2</Description>
+        <MoreInfo>https://github.com/reprisalgroup/Angular-Current</MoreInfo>
+        <Icon>angular.ico</Icon>
+        <PreviewImage>angular.ico</PreviewImage>
+        <Tags>Angular, C#, .NET 5</Tags>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0)">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    </Dependencies>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.0,18.0)" DisplayName="Visual Studio core editor" />
+        <Prerequisite Id="Microsoft.NetCore.Component.Runtime.5.0" Version="[17.0.32002.159,18.0)" DisplayName=".NET 5.0 Runtime" />
+    </Prerequisites>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Angular 13.2 with .Net 5.zip" />
+    </Assets>
+</PackageManifest>
