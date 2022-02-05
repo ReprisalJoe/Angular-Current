@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="f1b4ab70-0246-4ae3-b0ff-196bdc0635e2" Version="1.0" Language="en-US" Publisher="Joe Swindell" />
+        <Identity Id="f1b4ab70-0246-4ae3-b0ff-196bdc0635e2" Version="1.0" Language="en-US" Publisher="ReprisalGroup" />
         <DisplayName>.NET 5 with Angular 13.2</DisplayName>
         <Description xml:space="preserve">A project template for creaeting a .NET 5 applications with Angular 13.2</Description>
         <MoreInfo>https://github.com/reprisalgroup/Angular-Current</MoreInfo>
@@ -11,6 +11,12 @@
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0)">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Version="[17.0, 18.0)" Id="Microsoft.VisualStudio.Pro">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Version="[17.0, 18.0)" Id="Microsoft.VisualStudio.Enterprise">
             <ProductArchitecture>amd64</ProductArchitecture>
         </InstallationTarget>
     </Installation>
