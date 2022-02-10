@@ -23,19 +23,38 @@
   <ItemGroup>
     <!-- Don't publish the SPA source files, but do show them in the project files list -->
     <Content Remove="$(SpaRoot)**" />
+    <Content Remove="ClientApp\.angular\**" />
     <Content Remove="Controllers\**" />
     <None Remove="$(SpaRoot)**" />
+    <None Remove="ClientApp\.angular\**" />
     <None Remove="Controllers\**" />
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="ClientApp\.angular\**" />
     <Compile Remove="Controllers\**" />
+    <EmbeddedResource Remove="ClientApp\.angular\**" />
     <EmbeddedResource Remove="Controllers\**" />
+    <TypeScriptCompile Remove="ClientApp\.angular\**" />
+    <TypeScriptCompile Remove="ClientApp\node_modules\**" />
     <TypeScriptCompile Remove="Controllers\**" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\.angular\cache\13.2.1\angular-webpack\443b060688d529f31d5864e99b94d51216c16bcd\0.pack" />
+    <None Remove="ClientApp\.angular\cache\13.2.1\angular-webpack\443b060688d529f31d5864e99b94d51216c16bcd\index.pack" />
+    <None Remove="ClientApp\.angular\cache\13.2.1\angular-webpack\5ab65f8172ba92a929afdd8808d8250d23a345d8\0.pack" />
+    <None Remove="ClientApp\.angular\cache\13.2.1\angular-webpack\5ab65f8172ba92a929afdd8808d8250d23a345d8\index.pack" />
+    <None Remove="ClientApp\.angular\cache\13.2.1\angular-webpack\5c3de7f51cbf3d51c538f1cd19ed3ff1d7de4935\0.pack" />
+    <None Remove="ClientApp\.angular\cache\13.2.1\angular-webpack\5c3de7f51cbf3d51c538f1cd19ed3ff1d7de4935\index.pack" />
+    <None Remove="ClientApp\.angular\cache\13.2.1\babel-webpack\064188ff39239ee59d75b93db601b8ee.json" />
+    <None Remove="ClientApp\.angular\cache\13.2.1\babel-webpack\2fa62643af7725b61163822b1a56db03.json" />
+    <None Remove="ClientApp\.angular\cache\13.2.1\babel-webpack\689bcd59d942f18b7874ad3b6e6ab62b.json" />
+    <None Remove="ClientApp\.angular\cache\13.2.1\babel-webpack\9859e5647e09ff910362159613ea100b.json" />
+    <None Remove="ClientApp\.angular\cache\13.2.1\babel-webpack\d51ce651e5fa07b78bebcee39a84bf18.json" />
+    <None Remove="ClientApp\.angular\cache\13.2.1\babel-webpack\e1c7c92ab07005796e2cb5cb57c35baa.json" />
+    <None Remove="ClientApp\.gitignore" />
     <None Remove="ClientApp\src\app\app-routing.module.ts" />
   </ItemGroup>
 
@@ -74,5 +93,7 @@
       </ResolvedFileToPublish>
     </ItemGroup>
   </Target>
+
+  <ProjectExtensions><VisualStudio><UserProperties clientapp_4angular_1json__JsonSchema="https://beaujs.com/schema.json" /></VisualStudio></ProjectExtensions>
 
 </Project>
