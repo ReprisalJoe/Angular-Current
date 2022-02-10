@@ -1,6 +1,8 @@
 @import "scss/custom.scss";
-/* Provide sufficient contrast against white background */
-/*a {
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+ Provide sufficient contrast against white background 
+a {
   color: #0366d6;
 }
 
@@ -12,4 +14,4 @@ code {
   color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
-}*/
+}
